@@ -1,0 +1,9 @@
+>when user is defining the Exception it comes under the checked Exception.
+>Difference between Throw and Throws....
+>The throw keyword is used inside a function. It is used when it is required to throw an Exception logically.
+>The throws keyword is used in the function signature. It is used when the 
+function has some statements that can lead to exceptions.
+>The throw keyword is used to throw an exception explicitly. It can throw only one exception at a time.
+>The throws keyword can be used to declare multiple exceptions, separated by a comma. Whichever exception occurs, 
+if matched with the declared ones, is thrown automatically then.
+>Throws keyword is with extend keyword

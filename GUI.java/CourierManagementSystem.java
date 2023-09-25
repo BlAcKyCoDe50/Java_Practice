@@ -25,6 +25,7 @@ public class CourierManagementSystem {
             System.out.println("3. View All Shipments");
             System.out.println("4. View Invoice");
             System.out.println("5. Exit");
+            System.out.println("6. Return to Main Menu");
             System.out.print("Choose an option: ");
     
             option = scanner.nextInt();
@@ -46,7 +47,9 @@ public class CourierManagementSystem {
                 case 5:
                     System.out.println("Exiting......");
                     break;
-                default:
+                case 6:
+                    System.out.println("Return to main Menu");
+                 default:
                     System.out.println("!!Oops Invalid Option Try Again :(");
             }
         } while (option != 5);
@@ -70,7 +73,8 @@ public class CourierManagementSystem {
             packageWeight=scanner.nextDouble();
             if(packageWeight>50){
                 System.out.println("Sorry!!...We can't deliver the Packages Above 50KG");
-                // System.exit(0);
+                break;
+
                 
             }
             else{

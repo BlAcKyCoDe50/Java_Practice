@@ -29,6 +29,7 @@ public class GUI_Project {
     public GUI_Project () {
         // Create the JFrame
         frame = new JFrame("Courier Management System");
+        frame.getContentPane().setBackground(Color.GRAY);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 500);
         
@@ -41,8 +42,9 @@ public class GUI_Project {
         label = new JLabel("Welcome to the Courier Management System");
 
         // Create the JButtons
-        ImageIcon add= new ImageIcon("add.png");   //for image
-        addPackageButton = new JButton("",add);
+        ImageIcon add = new ImageIcon("add.png");
+        add.setImage(add.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH));
+        addPackageButton = new JButton("", add);
         addPackageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -50,8 +52,9 @@ public class GUI_Project {
             }
         });
 
-        ImageIcon Track= new ImageIcon("Track.jpg");
-        trackPackageButton = new JButton("",Track);
+        ImageIcon track = new ImageIcon("Track.jpg");
+        track.setImage(track.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH));
+        trackPackageButton = new JButton("", track);
         trackPackageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -59,8 +62,9 @@ public class GUI_Project {
             }
         });
 
-        ImageIcon List_All= new ImageIcon("Show.jpg");
-        listPackagesButton = new JButton("",List_All);
+        ImageIcon listAll = new ImageIcon("Show.jpg");
+        listAll.setImage(listAll.getImage().getScaledInstance(100, 200, Image.SCALE_SMOOTH));
+        listPackagesButton = new JButton("", listAll);
         listPackagesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -68,8 +72,9 @@ public class GUI_Project {
             }
         });
 
-        ImageIcon Invoice= new ImageIcon("Invoice.jpg");
-        viewInvoiceButton = new JButton("",Invoice);
+        ImageIcon invoice = new ImageIcon("Invoice.jpg");
+        invoice.setImage(invoice.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH));
+        viewInvoiceButton = new JButton("", invoice);
         viewInvoiceButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

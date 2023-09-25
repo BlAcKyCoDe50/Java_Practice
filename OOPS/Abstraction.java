@@ -26,7 +26,7 @@ public void walk(){
 }
 }
 
-public class OOPS {
+public class Abstraction {
     public static void main(String[] args) {
         Horse horse= new Horse();
         
